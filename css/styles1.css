@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #ff0000 0%, #6877ff 100%);
+    ;
+}
+
+nav {
+    width: 100%;
+    position: sticky !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    padding: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5), 0px 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container-fluid a {
+    font-size: 24px;
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+.nav-link {
+    color: white !important;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-item a {
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid white;
+}
+
+.quote {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.quote h2 {
+    font-weight: 600;
+}
+
+.quote p {
+    font-size: 17px;
+}
+
+.container header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+form .field {
+    margin-bottom: 20px;
+}
+
+form .input-tag {
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.input-tag input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 0 12px;
+    border: 1px solid black;
+}
+
+.invalid input {
+    border-color: #d93025;
+}
+
+.input-tag .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.field .error {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: #d93025;
+    font-size: 13px;
+    display: none;
+}
+
+.invalid .error {
+    display: flex;
+}
+
+.error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+.create-password .error-icon {
+    align-items: flex-start;
+}
+
+.create-password .error-icon {
+    margin-top: 4px;
+}
+
+.button {
+    margin: 25px 0 6px;
+    max-width: 100px;
+}
+
+.button input {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #0e4bf1;
+}
+
+.signin p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 21px;
+    margin-top: 5%;
+}
+
+.info table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form h3 {
+    color: black;
+    font-size: 23px;
+}
+
+form {
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-bottom: 5%;
+    padding: 3%;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .info form {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    form {
+        font-size: 13px;
+    }
+}
+
+
+/*.start_btn{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5),
+				0px 6px 20px 0 rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+}
+.start_btn td button{
+	font-size: 25px;
+	font-weight: 500;
+	color: blue;
+	outline: none;
+	border-radius: 2px solid black;
+	border-radius: 10px;
+	background: #fff;
+	cursor: pointer;
+}*/
+
+@media (max-width: 767px) {
+    .info form {
+        margin-left: 30%;
+        margin-right: 30%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info form {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 15px;
+    }
+}

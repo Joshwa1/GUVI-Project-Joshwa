@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #0011ff 0%, #ff0000 100%);
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    padding: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5), 0px 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+form .field {
+    margin-bottom: 20px;
+}
+
+form .input-tag {
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.input-tag input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 0 12px;
+    border: 1px solid black;
+}
+
+.invalid input {
+    border-color: #d93025;
+}
+
+.input-tag .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.field .error {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: #d93025;
+    font-size: 13px;
+    display: none;
+}
+
+.invalid .error {
+    display: flex;
+}
+
+.error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+.create-password .error-icon {
+    align-items: flex-start;
+}
+
+.create-password .error-icon {
+    margin-top: 4px;
+}
+
+.button {
+    margin: 25px 0 6px;
+    max-width: 100px;
+}
+
+.button input {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #0e4bf1;
+}
+
+.signin p {
+    text-align: center;
+    font-size: 15px;
+}

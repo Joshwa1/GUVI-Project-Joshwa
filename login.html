@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GUVI</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- BOXICONS CSS CDN LINK -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- TITLE -->
+    <div class="container">
+        <header>LOGIN</header>
+
+        <!-- FORM TAG - PHP -->
+        <form action="register_php.php" method="POST">
+            <!-- FIRST NAME -->
+
+
+            <!-- EMAIL FIELD -->
+            <div class="field email-tag">
+                <div class="input-tag">
+                    <input type="text" name="First Name" placeholder="first name">
+                </div>
+                <span class="error email-error">
+					<i class="bx bx-error-circle error-icon"></i>
+					<p class="error-msg">Enter a valid email</p>
+				</span>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="field create-password">
+                <div class="input-tag">
+                    <input type="password" placeholder="Enter password" name="password">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error password-error">
+					<i class="bx bx-error-circle error-icon"></i>
+					<p class="error-msg">Password may contain atleast 8 character with numeric, symbols and capital letter</p>
+				</span>
+            </div>
+
+            <!-- CONFIRM PASSWORD -->
+            <div class="field confirm-password">
+                <div class="input-tag">
+                    <input type="password" placeholder="Confirm Password" name="confirm-password">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error confirm-pass-error">
+					<i class="bx bx-error-circle error-icon"></i>
+					<p class="error-msg">Password didn't match</p>
+				</span>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <center>
+                <div class="input-tag button">
+                    <input type="submit" value="LOGIN" name="submit">
+                </div>
+            </center>
+
+
+        </form>
+
+    </div>
+
+
+
+
+    <!-- JAVA SCRIPT LINK -->
+    <script src="login.js"></script>
+    <!--LINK THE BOOTSTRAP JS CODE-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
